@@ -129,7 +129,7 @@ const App = () => {
           <Stack.Screen name="NonstopWatch" component={NonstopWatch} options={{ headerShown: true }} />
           <Stack.Screen name="Writepage" component={Writepage} options={{ headerShown: false }} />
           <Stack.Screen name="QRCodeScanner" component={QRCodeScanner} options={{ headerShown: true }} />
-          <Stack.Screen name="LookPage" component={LookPage} options={{ headerShown: true }} />
+          <Stack.Screen name="LookPage" component={LookPage} options={{ headerShown: true, headerTitle: ({ children }) => (<View></View>), }} />
           <Stack.Screen name="체중 기록" component={WeightView} options={{ headerShown: true, headerTitle: ({ children }) => (<View></View>), }} />
           <Stack.Screen name="체중 등록" component={WeightSetPage} options={{ headerShown: true, headerTitle: ({ children }) => (<View></View>), }} />
         </Stack.Navigator>
